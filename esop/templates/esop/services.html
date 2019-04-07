@@ -1,0 +1,123 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en"><head>-->
+  <!--<meta charset="UTF-8">-->
+  <!--<meta content="IE=edge" http-equiv="X-UA-Compatible">-->
+  <!--<meta content="width=device-width,initial-scale=1" name="viewport">-->
+  <!--<meta content="description" name="description">-->
+  <!--<meta name="google" content="notranslate">-->
+  <!--<meta content="Mashup templates have been developped by Orson.io team" name="author">-->
+
+  <!--&lt;!&ndash; Disable tap highlight on IE &ndash;&gt;-->
+  <!--<meta name="msapplication-tap-highlight" content="no">-->
+{% extends 'esop/base.html' %}
+
+{% block albums_active %}active{% endblock %}
+{% load staticfiles%}
+{% block body %}
+
+
+  <link href="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/common/assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/common/assets/favicon.ico" rel="icon">
+
+
+
+  <title>Title page</title>
+
+<link href="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/site/css/style.css" rel="stylesheet"></head>
+
+<!--<body>-->
+
+ <!-- Add your content of header -->
+<header class="">
+  <div class="navbar navbar-default visible-xs">
+    <button type="button" class="navbar-toggle collapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="index.html" class="navbar-brand">Mashup Template</a>
+  </div>
+
+  <nav class="sidebar">
+    <div class="navbar-collapse" id="navbar-collapse">
+      <div class="site-header hidden-xs">
+          <a class="site-brand" href="{% url 'index'%}" title="">
+            <img class="img-responsive site-logo" alt="" src="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/common/assets/mashup-logo.svg">
+            ESOP</a>
+        <p>Description</p>
+      </div>
+      <ul class="nav">
+        <li><a href="http://localhost:8000/index/" title="">Restaurants</a></li>
+        <li><a href="{% url 'barber'%}" title="">Barber</a></li>
+        <li><a href="{% url 'laundary'%}" title="">Laundary</a></li>
+        <li><a href="{% url 'erick'%}" title="">E-Rickshaw</a></li>
+        <!--<li><a href="contact.html" title="">Contact</a></li>-->
+        <!--<li><a href="components.html" title="">Components</a></li>-->
+
+      </ul>
+
+      <nav class="nav-footer">
+        <p class="nav-footer-social-buttons">
+          <a class="fa-icon" href="https://www.instagram.com/" title="">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="fa-icon" href="https://dribbble.com/" title="">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a class="fa-icon" href="https://twitter.com/" title="">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </p>
+        <p></p>
+      </nav>
+    </div>
+  </nav>
+</header>
+<main class="" id="main-collapse">
+
+
+<div class="row">
+  <div class="col-xs-12 section-container-spacer">
+    <h1>Laundary esop</h1>
+
+  </div>
+
+  <div class="col-xs-12 col-md-4 section-container-spacer">
+    <img class="img-responsive" alt="" src="{% static "images/45166618-laundry-service-design-vector-illustration.jpg" %}">
+    <h2>Name</h2>
+    <p>Contact Info</p>
+    <!--<a href="contact.html" class="btn btn-primary" title=""> Get in touch</a>-->
+  </div>
+
+  <!--<div class="col-xs-12 col-md-4 section-container-spacer">-->
+  <!--  <img class="img-responsive" alt="" src="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/common/assets/img-13.jpg">-->
+  <!--  <h2>Adipiscing</h2>-->
+  <!--  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+  <!--  <a href="contact.html" class="btn btn-primary" title=""> Get in touch</a>-->
+  <!--</div>-->
+
+  <!--<div class="col-xs-12 col-md-4 section-container-spacer">-->
+  <!--  <img class="img-responsive" alt="" src="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/common/assets/img-14.jpg">-->
+  <!--  <h2>Dolor</h2>-->
+  <!--  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+  <!--  <a href="contact.html" class="btn btn-primary" title=""> Get in touch</a>-->
+  <!--</div>-->
+
+</div>
+
+
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+  navbarToggleSidebar();
+  navActivePage();
+});
+</script>
+
+
+
+ <script type="text/javascript" src="https://s3.amazonaws.com/esite.io/projects/M362e332f96a09f3b34ca4578993ca0071552757584297/site/js/main.js"></script>
+
+{%endblock%}
